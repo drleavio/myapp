@@ -1,7 +1,8 @@
 import React from "react";
+import dbConnect from "@/lib/dbConnect";
 
-const page = () => {
-  return <div>page</div>;
+const page = async () => {
+  return <div>home</div>;
 };
 
 export default page;
