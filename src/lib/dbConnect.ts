@@ -13,7 +13,7 @@ async function dbConnect(): Promise<void> {
   }
   try {
     const db = await mongoose.connect(
-      "mongodb+srv://drlevio:drlevio@cluster0.k9sm2do.mongodb.net/user_schema?retryWrites=true&w=majority&appName=Cluster0"
+      "mongodb+srv://drlevio:Rahul1998@cluster0.k9sm2do.mongodb.net/myFirstDatabase?retryWrites=true&w=majority&appName=Cluster0"
     );
     connection.isConnected = db.connections[0].readyState;
     console.log("db connected successfull");

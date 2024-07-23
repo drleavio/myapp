@@ -1,7 +1,8 @@
-import { resend } from "../lib/resend";
+import { Resend } from "resend";
 import verificationEmails from "../../emails/verificationEmails";
 import { ApiResponse } from "@/app/types/ApiResponse";
-import { string } from "zod";
+
+const resend = new Resend(process.env.EMAIL_SEND_API_KEY);
 
 export async function sendVerificationEmail(
   email: string,
